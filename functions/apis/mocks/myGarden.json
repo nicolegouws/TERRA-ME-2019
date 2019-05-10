@@ -1,0 +1,49 @@
+[
+    {
+    "plantId": "001",
+     "name": "Daisy",
+     "photo": "https://cdn.glitch.com/aa28c2ef-2bff-4cec-8226-342e27098f01%2Fdaisy1_janice-gill-461332-unsplash.jpg?1556903527908"
+    },
+     {
+     "plantId": "002", 
+     "name": "Aloe",
+      "photo": "https://cdn.glitch.com/aa28c2ef-2bff-4cec-8226-342e27098f01%2Faloe_silvia-agrasar-227575-unsplash.jpg?1556903794562"
+     },
+     
+     {
+     "plantId": "003",
+     "name": "Basil",
+     "photo": "https://cdn.glitch.com/aa28c2ef-2bff-4cec-8226-342e27098f01%2Fbasil_lavi-perchik-1055165-unsplash.jpg?1556903769562"
+     },
+    
+     {
+    "plantId": "004",
+    "name": "Cactus",
+    "photo": "https://cdn.glitch.com/aa28c2ef-2bff-4cec-8226-342e27098f01%2FCactus_Canva%20-%20Green%20Cactus%20on%20Beige%20Pot.jpg?1556903599716"
+     },
+    
+     {
+    "plantId":"005",  
+    "name": "Daffodil",
+    "photo": "https://cdn.glitch.com/aa28c2ef-2bff-4cec-8226-342e27098f01%2Fdaffodil_beautiful-bloom-blooming-1021906.jpg?1556903721013"
+    },
+    
+     {
+    "plantId": "006",
+    "name": "Fern",
+    "photo": "https://cdn.glitch.com/aa28c2ef-2bff-4cec-8226-342e27098f01%2Ffern_Canva%20-%20Photography%20of%20Plants.jpg?1556903762853"
+    },
+    
+     {
+    "plantId": "007", 
+    "name": "Orchid",
+    "photo": "https://cdn.glitch.com/aa28c2ef-2bff-4cec-8226-342e27098f01%2Forchid-blooming-blossom-459283.jpg?1556903742712"
+    },
+     
+     {
+    "plantId": "008", 
+    "name": "Tomato",
+    "photo": "https://cdn.glitch.com/aa28c2ef-2bff-4cec-8226-342e27098f01%2Ftomato_steve-johnson-549703-unsplash.jpg?1556903740568"
+}
+        ]
+    

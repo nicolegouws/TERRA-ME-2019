@@ -1,8 +1,13 @@
-const functions = require('firebase-functions');
+var functions = require('firebase-functions');
+var admin = require('firebase-admin');
+admin.initializeApp();
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
+const doctor = require ('.apis/doctor');
+const userProfile = require ('.apis/userProfile');
+
+module.exports = {
+    getdoctor: functions.https.onRequest(doctor.get),
+    searchdoctor: functions.https.onRequest(doctor.search),
+    getUserProfile: functions.https.onRequest(userProfile.get),
+    searchuserProfile: functions.https.onRequest(userProfile.search)
+};
