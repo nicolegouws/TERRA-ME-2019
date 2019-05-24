@@ -1,36 +1,22 @@
-const functions = require('firebase-functions');
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
+var functions = require('firebase-functions');
+var admin = require('firebase-admin');
+admin.initializeApp();
 
-///Java script for the photo carosel
-var slideIndex = 1;
-showSlides(slideIndex);
+const plantProfile = require('./apis/plantProfile');
+const myGarden = require('./apis/myGarden');
+const doctor = require ('./apis/doctor');
+const userProfile = require ('./apis/userProfile');
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+module.exports = { 
+    'getPlantProfile': functions.https.onRequest(plantProfile.get),
+    'searchPlantProfile': functions.https.onRequest(plantProfile.search),
+    'getMyGarden': functions.https.onRequest(myGarden.get),
+    'searchMyGarden': functions.https.onRequest(myGarden.search),
+    'getdoctor' : functions.https.onRequest(doctor.get),
+    'searchDoctor': functions.https.onRequest(doctor.search),
+    'getUserProfile': functions.https.onRequest(userProfile.get),
+    'searchUserProfile': functions.https.onRequest(userProfile.search)
+};
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}

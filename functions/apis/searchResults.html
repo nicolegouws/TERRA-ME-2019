@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- import the webpage's javascript file -->
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+    <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <ion-app>
+        <ion-toolbar>
+            <ion-title>
+                <img id="logo" src="https://cdn.glitch.com/3406bd51-10b1-43d0-8d36-bf8215e0f310%2FGroup%202%402x.png?1557847249071">
+            </ion-title>
+            <ion-buttons slot="secondary">
+                <ion-button>
+                    <ion-icon slot="icon-only" name="search"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-menu-button auto-hide="false"></ion-menu-button>
+            </ion-buttons>
+        </ion-toolbar>
+
+        <ion-menu side="start" menu-id="first">
+            <ion-content>
+                <ion-list>
+                    <ion-item>My Garden</ion-item>
+                    <ion-item>Water Reminder</ion-item>
+                    <ion-item>Plant Doctor</ion-item>
+                    <ion-item>Community Forum</ion-item>
+                    <ion-item>My Account</ion-item>
+                    <ion-item>About Us</ion-item>
+                </ion-list>
+            </ion-content>
+        </ion-menu>
+
+        <div class="ion-page" main>
+            <ion-header>
+                <ion-toolbar>
+                    <ion-title>Menu - Basic</ion-title>
+                </ion-toolbar>
+            </ion-header>
+
+            <ion-content>
+                <h2>Search for a plant</h2>
+
+                <hr style="border: 1px solid;" />
+                <ion-searchbar></ion-searchbar>
+                <hr style="border: 1px solid;" />
+
+                <h3> Search for a plant </h3>
+                <ion-grid>
+                    <ion-row>
+
+                        <ion-col>
+                            <ion-card>
+                                <img src="https://cdn.glitch.com/5c5afb54-a278-4122-93c3-cffd0b114090%2FRectangle.jpg?1558209696646">
+
+                                <ion-card-header>
+                                    <ion-card-title>Daisy</ion-card-title>
+                                </ion-card-header>
+
+                                <ion-fab vertical="center" horizontal="center" slot="fixed">
+                                    <ion-fab-button>
+                                        <ion-icon name="more"></ion-icon>
+                                    </ion-fab-button>
+                                    <ion-fab-list side="top">
+                                        <div class="dropdown">
+                                            <span><ion-icon name="more"></ion-icon></span>
+                                            <div class="dropdown-content">
+                                                <p><ion-icon name="rose"></ion-icon>Add to my garden</p>
+                                                <p><ion-icon name="book"></ion-icon>Read more</p>
+                                            </div>
+                                        </div>
+                                </ion-fab>
+
+                            </ion-card>
+                        </ion-col>
+
+                        <ion-col>
+                            <ion-card>
+                                <img src="https://cdn.glitch.com/5c5afb54-a278-4122-93c3-cffd0b114090%2FRectangle.png?1558209696945">
+                                <ion-card-header>
+                                    <ion-card-title>Black-eyed Susan
+                                        <ion-icon name="more"></ion-icon>
+                                    </ion-card-title>
+                                </ion-card-header>
+                            </ion-card>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+
+                <ion-grid>
+                    <ion-row>
+
+                        <ion-col>
+                            <ion-card>
+                                <img src="https://cdn.glitch.com/5c5afb54-a278-4122-93c3-cffd0b114090%2FRectangle%20(1).png?1558209695766">
+                                <ion-card-header>
+                                    <ion-card-title>Daisy
+                                        <ion-icon name="more"></ion-icon>
+                                    </ion-card-title>
+                                </ion-card-header>
+                            </ion-card>
+                        </ion-col>
+
+                        <ion-col>
+                            <ion-card>
+                            </ion-card>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+
+                <div class="leftAlligned">
+                    <ion-button>Plant search results</ion-button>
+                </div>
+
+                <div id="footer">
+                    <ion-card>
+                        <ion-card-content>
+
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <ion-icon name="logo-youtube"></ion-icon>
+                            <p>
+                                © 2018-2019 Terra Me Limited
+                            </p>
+
+                        </ion-card-content>
+                    </ion-card>
+
+                </div>
+            </ion-content>
+        </div>
+    </ion-app>
+    <ion-menu-controller></ion-menu-controller>
+</body>
+<script src="./script.js"></script>
+
+</html>
