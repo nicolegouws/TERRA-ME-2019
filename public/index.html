@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./src/global.css">
+    <!-- import the webpage's javascript file -->
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+   <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+   <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
+   <script src="./src/home-page.js"></script>
+   <script src="./src/my-garden.js"></script>
+   <script src="./src/plant-search.js"></script>
+   <script src="./src/search-results.js"></script>
+   <script src="./src/plant-profile-new.js"></script>
+
+
+</head>  
+  <body>
+    <ion-app>  
+   
+          <ion-router>
+                <ion-route url="/" component="home-page"></ion-route>
+                <ion-route url="/home" component="home-page"></ion-route>
+                <ion-route url="/my-garden:id" component="my-garden"></ion-route>
+                <ion-route url="/plant-search" component="plant-search"></ion-route>
+                <ion-route url="/search-results" component="search-results"></ion-route>
+                <ion-route url="/plant-profile/:id" component="plant-profile"></ion-route>
+          </ion-router>
+        <ion-nav></ion-nav>
+    </ion-app> 
+ </body>
+  
+</html>
