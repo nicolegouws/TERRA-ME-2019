@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./src/global.css">
+    <!-- import the webpage's javascript file -->
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+   <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+   <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
+  </head>  
+  <body>
+        <ion-app>
+            <ion-toolbar>
+              
+              <ion-title>
+                  <img id="logo" src="https://cdn.glitch.com/3406bd51-10b1-43d0-8d36-bf8215e0f310%2FGroup%202%402x.png?1557847249071" >
+              </ion-title>
+                <ion-buttons slot="secondary">
+                   <ion-button>
+                      <ion-icon slot="icon-only" name="search">
+                      </ion-icon>
+                  </ion-button>
+              </ion-buttons> 
+                <ion-buttons slot="end">
+                      <ion-menu-button auto-hide="false"></ion-menu-button>
+                </ion-buttons>
+            </ion-toolbar>
+      
+        <ion-menu side="start" menu-id="first">
+          <ion-header>
+            <ion-toolbar >
+              <ion-title>Start Menu</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+            <ion-list>
+              <ion-item>My Garden</ion-item>
+              <ion-item>Water Reminder</ion-item>
+              <ion-item>Plant Doctor</ion-item>
+              <ion-item>Community Forum</ion-item>
+              <ion-item>My Account</ion-item>
+            </ion-list>
+          </ion-content>
+        </ion-menu>
+      
+        <div class="ion-page" main>
+          <ion-header>
+            <ion-toolbar>
+              <ion-title>Menu - Basic</ion-title>
+            </ion-toolbar>
+          </ion-header>
+      
+          <ion-content padding>
+          <ion-grid>
+                    <ion-row>
+                       <ion-col size="12">
+                        </ion-col>
+                    </ion-row>
+                  </ion-grid>   
+              
+            <h2>
+            Plant profile 
+            </h2>
+          
+            <hr style="border: 1px solid;" />
+      
+         <div class ="fixed">
+          <ion-button>Add To My Garden  </ion-button>
+          </div>
+      
+              
+          <div class="new-card img8">            
+          <div class="new-card-top-text">
+                 Cactus
+              </div>
+              <div class="new-card-bottom-text">
+                 A low maintenance plant that is ideal for busy people and indoor spaces
+              </div> 
+            </div>      
+         
+            <ion-grid>
+          <ion-row>
+             <ion-col size="2"> <img src="https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/Sun%20Icon%2C%20full.svg?alt=media&token=7ff28bc1-c76d-4cff-bf28-2df703c405ef">
+              </ion-col>
+            <ion-col size="9"><p class="care">Full Sun </p>
+              </ion-col>
+          </ion-row><hr style="border: 1px solid;" /> 
+        </ion-grid>    
+       
+        
+             <ion-grid>
+          <ion-row>
+             <ion-col size="2"> <img src="https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/Watering%20Icon.svg?alt=media&token=46f900f2-d64a-4e6f-aefa-0d18617ef55a">
+              </ion-col>
+            <ion-col size="9"><p class="care">Water every 3 weeks when dormant, weekly when in bloom</p>
+              </ion-col>
+          </ion-row><hr style="border: 1px solid;" /> 
+        </ion-grid>       
+               
+               <ion-grid>
+          <ion-row>
+             <ion-col size="2"> <img src="https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/Grow%20Icon.svg?alt=media&token=fa1b0421-6a1d-4796-8b06-4ef08594005d">
+              </ion-col>
+            <ion-col size="9"><p class="care">Indoors in non-dessert climates</p>
+              </ion-col>
+          </ion-row><hr style="border: 1px solid;" /> 
+        </ion-grid>      
+            
+       
+          
+       <section>  
+           <div class="know-top-text">
+           <h2>Did you know? </h2>
+            </div>
+        
+         
+         <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/cactus_know.jpg?alt=media&token=a0f3163a-f44b-4c1c-93a9-c0e67df198c4" style="width:100%">
+        <div class="text">The cactus is a perennial succulent that does well as a houseplant.</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/agave.jpg?alt=media&token=64ec8f0a-3d1c-4447-9b2f-02289b57bd59" style="width:100%">
+        <div class="text">Ideal companion plants include other succulents such as agave.</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/cactusfood.jpg?alt=media&token=92f51d91-7f8c-4870-ae9a-e2196aceab43" style="width:100%">
+        <div class="text">The pads of the nopal cactus are often eaten as a vegetable. They can be be cooked or eaten raw.</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+         
+         
+       
+      
+      </section>       
+            
+       <hr style="border: 1px solid;" />    
+            <h3>
+            Prickly cactus?
+          </h3>
+          <p>Have a prickly cactus and not sure what to do? 
+          Make an appointment with our Plant Doctor to find out how to solve your problems. </p>
+         
+            <ion-button> Visit Plant Doctor </ion-button>
+            
+      
+          </ion-content>
+          </div>
+            
+      
+      
+      </ion-app>
+      <ion-menu-controller></ion-menu-controller>
+      
+      </body>
+    <script src="./src/my-garden.js"></script>
+    </html>
+    

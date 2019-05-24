@@ -19,3 +19,4 @@ module.exports = {
     'getUserProfile': functions.https.onRequest(userProfile.get),
     'searchUserProfile': functions.https.onRequest(userProfile.search)
 };
+

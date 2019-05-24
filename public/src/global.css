@@ -1,0 +1,346 @@
+h2{
+    font-family : "open sans";
+    font-weight: bold;
+}
+
+hr {     
+background-color: #77ab49;
+color: #77ab49;
+}
+ion-icon { 
+float:right;
+}
+
+ion-button {
+    font-family : "open sans";
+    font-weight: bold;
+    --background : #E5C42B;
+    --color: white;
+    --border-radius : 15px;
+    text-transform: capitalize;
+    font-size: 18px;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.fixed {
+position:sticky;
+top: 16px; 
+width: 100%;
+}
+
+ion-fab-button {
+--color: white;
+float: right;
+height: 24px;
+width: 24px;   
+}
+.container {
+position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+position: absolute;
+bottom: 20px;
+right: 20px;
+background-color: black;
+color: white;
+padding-left: 20px;
+padding-right: 20px;
+
+}
+
+.new-card {
+margin : 1em;
+min-width : 10em;
+min-height : 12em;
+color : white;
+font-weight : 500;
+background-size: cover;
+}
+
+.new-card-top-text {
+height : 40px;
+padding : 0.6em;
+text-align : left;
+background-color: rgba(56, 56, 56, 0.5);
+font-family: "open sans"
+}
+
+.new-card-bottom-text {
+margin-top : 8em;
+height : 40px;
+padding : 0.6em;
+text-align : left;
+background-color: rgba(56, 56, 56, 0.5);
+font-family: "open sans"
+}
+  
+.reminder { 
+height: 20px;
+width: 20px;
+position: relative;
+
+}
+
+.img1 {
+background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/Aloe1.jpg?alt=media&token=ae933b06-06b6-4fc0-b212-7f9bfba67862")
+}
+
+.img2 {
+background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/basil1.jpg?alt=media&token=2770e66a-6764-4e9c-903e-4e999112f1ff")
+}
+
+.img3 {
+background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/daffodil1.jpg?alt=media&token=c126528c-f6fb-4a52-b93a-9b5d3b2713f8")
+}
+
+.img4 {
+background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/daisy1.jpg?alt=media&token=ba1ea1a6-db9c-4f4e-aa3e-c0107aa1862d")
+}
+
+.img5 {
+background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/fern1.jpg?alt=media&token=e37ba061-69b0-439b-938c-28c0139de2be")
+}
+.img6 {
+background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/orchid1.jpg?alt=media&token=4e5d1259-7cc2-456b-b15a-84a9355f3468")
+}
+
+.img7 {
+background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/tomato1.jpg?alt=media&token=59309dd8-6f0f-4b49-83b9-956de3a42467")
+}
+
+.img8 {
+background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/cactus-houseplant.jpg?alt=media&token=88fe4104-3500-4e48-8523-2700bebfe741")
+}
+
+h2{
+    font-family:"Open Sans";
+    font-size:32px;
+    font-weight:bold;
+}
+
+hr {     
+background-color: #77ab49;
+color: #77ab49;
+}
+
+h3 {
+text-align: center;
+color: #77ab49;
+font-family :"Open Sans";
+font-size: 24px;
+font-weight: bold;
+}
+
+p{
+font-family:"Open Sans";
+font-size: 16px;
+margin: 16px;
+}
+
+.care{ 
+margin-left: 16px;
+font-family: "Open Sans";
+font-size: 16px;  
+}
+
+ion-button {
+    font-family : "Open Sans";
+    font-weight: bold;
+    --background : #E5C42B;
+    --color: white;
+    --border-radius : 15px;
+    text-transform: capitalize;
+    font-size: 18px;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.fixed {
+position:sticky;
+top: 16px; 
+width: 100%;
+}
+
+.care { 
+font-family: "Open Sans";
+font-size: 16px;
+}
+
+.container {
+position: relative;
+margin: auto;
+}
+
+/* Bottom right text */
+.text-block {
+position: absolute;
+bottom: 20px;
+right: 20px;
+background-color: black;
+color: white;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.new-card {
+margin : 1em;
+min-width : 10em;
+min-height : 12em;
+color : white;
+font-weight : 500;
+background-size: cover;
+}
+
+.new-card-top-text {
+height : 40px;
+padding : 0.6em;
+text-align : left;
+background-color: rgba(56, 56, 56, 0.5);
+font-family: "open sans"
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+background-color: rgba(56, 56, 56, 0.5);
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+
+
+
+.new-card-bottom-text {
+margin-top : 8em;
+height : 64px;
+padding : 0.6em;
+text-align : left;
+background-color: rgba(56, 56, 56, 0.5);
+font-family: "open sans"
+}
+
+.img8 {
+background-image: url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/cactus-houseplant.jpg?alt=media&token=88fe4104-3500-4e48-8523-2700bebfe741");
+}
+
+.img9 {
+ background-image: url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/cactus_know.jpg?alt=media&token=a0f3163a-f44b-4c1c-93a9-c0e67df198c4");
+}
+.img10 {
+ background-image: url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/agave.jpg?alt=media&token=64ec8f0a-3d1c-4447-9b2f-02289b57bd59");  
+ } 
+
+ .img11{
+ background-image: url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/cactusfood.jpg?alt=media&token=92f51d91-7f8c-4870-ae9a-e2196aceab43");  
+ } 
+
+
+.know-top-text {
+font-family: "Open Sans";
+font-size: 24px;
+text-align: center;
+color: #77ab49;
+} 
+.know-bottom-text {
+font-family: "Open Sans";
+font-size: 16px;
+margin-left: 8px;
+margin-right:8px; 
+  
+}
+
+section{
+background-color: #f2f2f2;
+padding: 16px;
+}
