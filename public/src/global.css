@@ -392,23 +392,35 @@ padding: 16px;
   
   #footer {
   color: white;
-  background-color: #424242;
   text-align: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 16px;
-  padding-right: 16px;
-  width: 100%;
-  
-  }
-  
-  #logo-facebook {
-  width : 300px;
-  }
-    
+  background-color: #424242;
+  height: 100px;
 
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
   
- 
+  li {
+    margin-left : auto;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
   
   .more {
    width: 100px;
