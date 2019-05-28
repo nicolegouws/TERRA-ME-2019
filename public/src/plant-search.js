@@ -3,7 +3,18 @@ class PlantSearch extends HTMLElement{
      super();
     }
     connectedCallback(){
-        this.innerHTML = `Plant Search`;    
+        this.innerHTML = `       <h2>
+        Search for a plant 
+        </h2>
+  
+                  <hr style="border: 1px solid;" />
+                  <ion-searchbar></ion-searchbar>
+  
+                  <img id="placeholder" src="/Users/nicolegouws/TERRA-ME-2019/public/assets/PhotoUpload.png" />
+  
+                  <div class="fixed">
+                      <ion-button>Take a Picture</ion-button>
+                  </div>`;    
     }
    }
    
