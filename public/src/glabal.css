@@ -51,6 +51,8 @@ padding-top: 24px;
 padding-bottom: 24px;
 padding-left: 16px;
 padding-right: 16px;
+width: 100%;
+
 }
 
 #logo-facebook {
@@ -140,7 +142,6 @@ padding: 16px
 
 p{
 font-family: Open Sans;
-
 font-size: 16px;
 text-align: center;
 }

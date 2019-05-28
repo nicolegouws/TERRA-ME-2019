@@ -1,15 +1,65 @@
-h2{
-    font-family : "open sans";
-    font-weight: bold;
+ion-app {
+    height: 100%;
 }
 
+h1 {
+    font-family: Open Sans;
+    color: #77AB49;
+    font-size: 32px;
+    text-align: center;
+  }
+
+h2{
+    font-family:"Open Sans";
+    font-size:32px;
+    font-weight: 600;
+    margin-left: 16px;
+}
 hr {     
 background-color: #77ab49;
 color: #77ab49;
 }
+
+h3 {
+    text-align: left;
+    color: #000000;
+    font-family :"Open Sans";
+    font-size: 24px;
+   margin-left: 16px;
+    font-weight: 300;
+    }
+
+h3 {
+text-align: center;
+color: #77ab49;
+font-family :"Open Sans";
+font-size: 24px;
+font-weight: bold;
+}
+
+p{
+font-family:"Open Sans";
+font-size: 16px;
+margin: 16px;
+}
+
+p{
+    font-family: Open Sans;
+    font-size: 16px;
+    text-align: center;
+    }   
+
 ion-icon { 
 float:right;
 }
+
+
+ion-icon{
+    width: 44px;
+    height: 44px;
+    color: #ffffff;
+    padding: 16px
+    }
 
 ion-button {
     font-family : "open sans";
@@ -24,6 +74,20 @@ ion-button {
     margin-bottom: 24px;
 }
 
+ion-button {
+    font-family : 'Open Sans';
+    font-weight: bold;
+    --background : #E5C42B;
+    --border-radius : 15px;
+    text-transform: capitalize;
+    font-size: 18px;
+    display: block;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+}
+
 .fixed {
 position:sticky;
 top: 16px; 
@@ -36,6 +100,13 @@ float: right;
 height: 24px;
 width: 24px;   
 }
+
+ion-fab-button {
+    --background : #E5C42B;
+}
+
+
+
 .container {
 position: relative;
 }
@@ -86,89 +157,42 @@ position: relative;
 }
 
 .img1 {
-background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/Aloe1.jpg?alt=media&token=ae933b06-06b6-4fc0-b212-7f9bfba67862")
+background-image : url("/assets/Aloe1.jpg");
 }
 
 .img2 {
-background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/basil1.jpg?alt=media&token=2770e66a-6764-4e9c-903e-4e999112f1ff")
+background-image : url("/assets/basil1.jpg");
 }
 
 .img3 {
-background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/daffodil1.jpg?alt=media&token=c126528c-f6fb-4a52-b93a-9b5d3b2713f8")
+background-image : url("/assets/daffodil1.jpg");
 }
 
 .img4 {
-background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/daisy1.jpg?alt=media&token=ba1ea1a6-db9c-4f4e-aa3e-c0107aa1862d")
+background-image : url("/assets/daisy1.jpg")
 }
 
 .img5 {
-background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/fern1.jpg?alt=media&token=e37ba061-69b0-439b-938c-28c0139de2be")
+background-image : url("/assets/fern1.jpg")
 }
 .img6 {
-background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/orchid1.jpg?alt=media&token=4e5d1259-7cc2-456b-b15a-84a9355f3468")
+background-image : url("/assets/orchid1.jpg")
 }
 
 .img7 {
-background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/tomato1.jpg?alt=media&token=59309dd8-6f0f-4b49-83b9-956de3a42467")
+background-image : url("/assets/tomato1.jpg")
 }
 
 .img8 {
-background-image : url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/cactus-houseplant.jpg?alt=media&token=88fe4104-3500-4e48-8523-2700bebfe741")
+background-image : url("/assets/cactus-houseplant.jpg")
 }
 
-h2{
-    font-family:"Open Sans";
-    font-size:32px;
-    font-weight:bold;
-}
 
-hr {     
-background-color: #77ab49;
-color: #77ab49;
-}
-
-h3 {
-text-align: center;
-color: #77ab49;
-font-family :"Open Sans";
-font-size: 24px;
-font-weight: bold;
-}
-
-p{
-font-family:"Open Sans";
-font-size: 16px;
-margin: 16px;
-}
 
 .care{ 
 margin-left: 16px;
 font-family: "Open Sans";
 font-size: 16px;  
-}
-
-ion-button {
-    font-family : "Open Sans";
-    font-weight: bold;
-    --background : #E5C42B;
-    --color: white;
-    --border-radius : 15px;
-    text-transform: capitalize;
-    font-size: 18px;
-    display: block;
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-.fixed {
-position:sticky;
-top: 16px; 
-width: 100%;
-}
-
-.care { 
-font-family: "Open Sans";
-font-size: 16px;
 }
 
 .container {
@@ -310,20 +334,17 @@ background-color: rgba(56, 56, 56, 0.5);
 font-family: "open sans"
 }
 
-.img8 {
-background-image: url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/cactus-houseplant.jpg?alt=media&token=88fe4104-3500-4e48-8523-2700bebfe741");
-}
 
 .img9 {
- background-image: url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/cactus_know.jpg?alt=media&token=a0f3163a-f44b-4c1c-93a9-c0e67df198c4");
+ background-image: url("/assets/cactus_know.jpg")
 }
 .img10 {
- background-image: url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/agave.jpg?alt=media&token=64ec8f0a-3d1c-4447-9b2f-02289b57bd59");  
- } 
+ background-image: url("/assets/agave.jpg")
+}
 
  .img11{
- background-image: url("https://firebasestorage.googleapis.com/v0/b/terrame2019.appspot.com/o/cactusfood.jpg?alt=media&token=92f51d91-7f8c-4870-ae9a-e2196aceab43");  
- } 
+ background-image: url("assets/cactusfood.jpg")
+}
 
 
 .know-top-text {
@@ -344,3 +365,106 @@ section{
 background-color: #f2f2f2;
 padding: 16px;
 }
+
+.large {
+    width : 200px;
+  }
+    
+ 
+  
+  #logo {
+    width : 164px;
+  }
+    
+  #banner {
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #profilePicture {
+    width : 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 24px
+  }
+  
+  
+  
+  #footer {
+  color: white;
+  background-color: #424242;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  
+  }
+  
+  #logo-facebook {
+  width : 300px;
+  }
+    
+
+  
+ 
+  
+  .more {
+   width: 100px;
+    height: 100px;
+    background-color: #FFC7E4;
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+ 
+  
+    
+  .leftAlligned {
+  margin-left: 60%;
+    width: 305px;
+    padding: 10px;
+   --color : #77AB49;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 9999999999;
+     display: block;
+     padding: 12px 16px;
+    z-index: 9999999999;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+     padding: 12px 16px;
+    z-index: 9999999999;
+  }
+  
+  
+  
+  #placeholder{
+    width : 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 24px;
+  }
+  
+  
+  
