@@ -4,6 +4,7 @@ class PlantProfile extends HTMLElement{
     }
     connectedCallback(){
         this.innerHTML = `
+        <ion-content>
         <ion-grid>
         <ion-row>
            <ion-col size="12">
@@ -114,7 +115,8 @@ Make an appointment with our Plant Doctor to find out how to solve your problems
 
 <ion-button> Visit Plant Doctor </ion-button>
 
-        `;
+</ion-content>  
+`;
 
 }
    }

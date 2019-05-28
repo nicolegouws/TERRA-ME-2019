@@ -3,7 +3,9 @@ class PlantSearch extends HTMLElement{
      super();
     }
     connectedCallback(){
-        this.innerHTML = `       <h2>
+        this.innerHTML = `       
+        <ion-content>
+        <h2>
         Search for a plant 
         </h2>
   
@@ -14,7 +16,9 @@ class PlantSearch extends HTMLElement{
   
                   <div class="fixed">
                       <ion-button>Take a Picture</ion-button>
-                  </div>`;    
+                  </div>
+        </ion-content>
+                  `;    
     }
    }
    

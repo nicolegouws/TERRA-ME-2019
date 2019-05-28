@@ -3,7 +3,9 @@ class SearchResults extends HTMLElement{
      super();
     }
     connectedCallback(){
-        this.innerHTML = `<h2>Search for a plant</h2>
+        this.innerHTML = `
+        <ion-content>
+        <h2>Search for a plant</h2>
 
         <hr style="border: 1px solid;" />
         <ion-searchbar></ion-searchbar>
@@ -83,7 +85,9 @@ class SearchResults extends HTMLElement{
                                 <ion-icon name="more"></ion-icon>
                             </ion-card-title>
                         </ion-card-header>
-                    </ion-card>`;   
+                    </ion-card>
+        </ion-content>
+                    `;   
     }
    }
    
