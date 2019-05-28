@@ -5,6 +5,7 @@ class MyGarden extends HTMLElement{
     connectedCallback(){
         this.innerHTML = 
         `
+        <ion-content>
         <ion-grid>
         <ion-row>
            <ion-col size="12">
@@ -112,7 +113,7 @@ class MyGarden extends HTMLElement{
              Water today
           </div> 
         </div>
-   
+      </ion-content>
     `; 
     }
    }
