@@ -17,7 +17,7 @@ class SearchResults extends HTMLElement{
 
                 <ion-col>
                     <ion-card>
-                        <img src="/Users/nicolegouws/TERRA-ME-2019/public/assets/Cactus1.jpg">
+                        <img src="/assets/cactus-houseplant.jpg">
 
                         <ion-card-header>
                             <ion-card-title>Cactus</ion-card-title>
@@ -42,7 +42,7 @@ class SearchResults extends HTMLElement{
 
                 <ion-col>
                     <ion-card>
-                        <img src="/Users/nicolegouws/TERRA-ME-2019/public/assets/burrostailbasket-1200x1200.jpg">
+                        <img src="assets/burrostailbasket-1200x1200.jpg">
                         <ion-card-header>
                             <ion-card-title>Burros Tail
                                 <ion-icon name="more"></ion-icon>
@@ -58,7 +58,7 @@ class SearchResults extends HTMLElement{
 
                 <ion-col>
                     <ion-card>
-                        <img src="/Users/nicolegouws/TERRA-ME-2019/public/assets/Aloe1.jpg">
+                        <img src="/assets/Aloe1.jpg">
                         <ion-card-header>
                             <ion-card-title>Aloe
                                 <ion-icon name="more"></ion-icon>
@@ -79,7 +79,7 @@ class SearchResults extends HTMLElement{
 
                 <ion-col>
                     <ion-card>
-                        <img src="/Users/nicolegouws/TERRA-ME-2019/public/assets/bi-color-hens-chicks_35643_zoom0.jpg">
+                        <img src="assets/bi-color-hens-chicks_35643_zoom0.jpg">
                         <ion-card-header>
                             <ion-card-title>Color Hens Chicks
                                 <ion-icon name="more"></ion-icon>
