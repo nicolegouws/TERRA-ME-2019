@@ -4,23 +4,20 @@ class PlantProfile extends HTMLElement{
     }
     connectedCallback(){
         this.innerHTML = `
-        <ion-content>
+        <ion-content padding>
+        
         <ion-grid>
         <ion-row>
            <ion-col size="12">
             </ion-col>
         </ion-row>
-      </ion-grid>   
-  
-<h2>
-Plant profile 
-</h2>
-
-<hr style="border: 1px solid;" />
-
-<div class ="fixed">
-<ion-button>Add To My Garden  </ion-button>
-</div>
+      </ion-grid> 
+      <h2>Plant profile </h2>
+      <hr style="border: 1px solid;"/>
+ 
+     <div class ="fixed">
+      <ion-button>Add To My Garden  </ion-button>
+     </div>
 
   
 <div class="new-card img8">           
@@ -36,7 +33,7 @@ Plant profile
 <ion-row>
  <ion-col size="2"> <img src="/assets/FullSun.svg">
   </ion-col>
-<ion-col size="9"><p class="care">Full Sun </p>
+<ion-col size="9"><p>Full Sun </p>
   </ion-col>
 </ion-row><hr style="border: 1px solid;" /> 
 </ion-grid>    
@@ -46,7 +43,7 @@ Plant profile
 <ion-row>
  <ion-col size="2"> <img src="/assets/Water.svg">
   </ion-col>
-<ion-col size="9"><p class="care">Water every 3 weeks when dormant, weekly when in bloom</p>
+<ion-col size="9"><p> Water every 3 weeks when dormant, weekly when in bloom</p>
   </ion-col>
 </ion-row><hr style="border: 1px solid;" /> 
 </ion-grid>       
@@ -55,7 +52,7 @@ Plant profile
 <ion-row>
  <ion-col size="2"> <img src="/assets/Grow Icon.svg">
   </ion-col>
-<ion-col size="9"><p class="care">Indoors in non-desert climates</p>
+<ion-col size="9"><p>Indoors in non-desert climates</p>
   </ion-col>
 </ion-row><hr style="border: 1px solid;" /> 
 </ion-grid>      
