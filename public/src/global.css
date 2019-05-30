@@ -409,12 +409,12 @@ padding: 16px;
     overflow: hidden;
   }
 
-  footer-icon{
-    width: 30px;
+  .footer-icon{
+    width: 24px;
   }
 
 .centerlist{
-  min-width: 355px;
+  min-width: 385px;
   margin: auto;
 }
   .more {
