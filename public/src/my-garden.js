@@ -5,7 +5,7 @@ class MyGarden extends HTMLElement{
     connectedCallback(){
         this.innerHTML = 
         `
-        <ion-content>
+        <ion-content padding>
         <ion-grid>
         <ion-row>
            <ion-col size="12">

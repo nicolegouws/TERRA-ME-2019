@@ -15,6 +15,7 @@ h2{
 hr {     
 background-color: #77ab49;
 color: #77ab49;
+background-image: cover;
 }
 
 h3 {
@@ -99,9 +100,14 @@ width: 24px;
 }
 
 ion-fab-button {
-    --background : #E5C42B;
+    --background : #77ab49;
+    
 }
-
+.reminder { 
+  height: 20px;
+  width: 20px;
+  right: 3em;
+  }
 
 
 .container {
@@ -121,8 +127,11 @@ padding-right: 20px;
 }
 
 .new-card {
-margin : 1em;
-min-width : 10em;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-right: 2px;
+  margin-left: 2px;
+
 min-height : 12em;
 color : white;
 font-weight : 500;
@@ -137,21 +146,16 @@ background-color: rgba(56, 56, 56, 0.5);
 font-family: "open sans"
 }
 
-.new-card-bottom-text {
+.new-card-bottom-text-profile{
 margin-top : 8em;
-height : 40px;
+height : 64px;
 padding : 0.6em;
 text-align : left;
 background-color: rgba(56, 56, 56, 0.5);
 font-family: "open sans"
 }
   
-.reminder { 
-height: 20px;
-width: 20px;
-position: relative;
 
-}
 
 .img1 {
 background-image : url("/assets/Aloe1.jpg");
@@ -227,7 +231,7 @@ font-family: "open sans"
 
 .new-card-bottom-text {
   margin-top : 8em;
-  height : 64px;
+  height : 40px;
   padding : 0.6em;
   text-align : left;
   background-color: rgba(56, 56, 56, 0.5);
@@ -327,10 +331,6 @@ to {opacity: 1}
 @media only screen and (max-width: 300px) {
 .prev, .next,.text {font-size: 11px}
 }
-
-
-
-
 
 
 .img9 {

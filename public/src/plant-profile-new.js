@@ -23,12 +23,11 @@ Plant profile
 </div>
 
   
-<div class="new-card img8">  
-  <img src="/assets/cactus-houseplant.jpg">          
+<div class="new-card img8">           
 <div class="new-card-top-text">
      Cactus
   </div>
-  <div class="new-card-bottom-text">
+  <div class="new-card-bottom-text-profile">
      A low maintenance plant that is ideal for busy people and indoor spaces
   </div> 
 </div>      
