@@ -87,6 +87,7 @@ class SearchResults extends HTMLElement{
                         </ion-card-header>
                     </ion-card>
         </ion-content>
+        <terra-footer></terra-footer>
                     `;   
     }
    }

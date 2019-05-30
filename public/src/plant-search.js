@@ -18,6 +18,7 @@ class PlantSearch extends HTMLElement{
                       <ion-button>Take a Picture</ion-button>
                   </div>
         </ion-content>
+        <terra-footer></terra-footer>
                   `;    
     }
    }

@@ -115,6 +115,7 @@ Make an appointment with our Plant Doctor to find out how to solve your problems
 <ion-button> Visit Plant Doctor </ion-button>
 
 </ion-content>  
+<terra-footer></terra-footer>
 `;
 
 }
