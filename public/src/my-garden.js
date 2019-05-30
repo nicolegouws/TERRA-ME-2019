@@ -114,6 +114,7 @@ class MyGarden extends HTMLElement{
           </div> 
         </div>
       </ion-content>
+      <terra-footer></terra-footer>
     `; 
     }
    }

@@ -10,8 +10,7 @@ class HomePage extends HTMLElement{
      <div><img id="profilePicture" src="/assets/Ema.png"></div>
      <ion-button>My Garden</ion-button>    
      </ion-content>
-     <terra-footer></terra-footer>
-     
+     <terra-footer></terra-footer> 
      `;    
  }
 }
