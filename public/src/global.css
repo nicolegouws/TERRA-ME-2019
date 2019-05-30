@@ -402,23 +402,21 @@ padding: 16px;
 
   }
 
-.centerlist{
-  min-width: 355px;
-  margin: auto;
-}
-
-footer-icon{
-  width: 30px;
-}
-
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
   }
-  
+
+  footer-icon{
+    width: 30px;
+  }
+
+.centerlist{
+  min-width: 355px;
+  margin: auto;
+}
   .more {
    width: 100px;
     height: 100px;
