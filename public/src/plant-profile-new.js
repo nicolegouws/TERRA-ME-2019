@@ -56,7 +56,7 @@ Plant profile
 <ion-row>
  <ion-col size="2"> <img src="/assets/Grow Icon.svg">
   </ion-col>
-<ion-col size="9"><p class="care">Indoors in non-dessert climates</p>
+<ion-col size="9"><p class="care">Indoors in non-desert climates</p>
   </ion-col>
 </ion-row><hr style="border: 1px solid;" /> 
 </ion-grid>      

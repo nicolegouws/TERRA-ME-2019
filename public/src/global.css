@@ -225,6 +225,14 @@ background-color: rgba(56, 56, 56, 0.5);
 font-family: "open sans"
 }
 
+.new-card-bottom-text {
+  margin-top : 8em;
+  height : 64px;
+  padding : 0.6em;
+  text-align : left;
+  background-color: rgba(56, 56, 56, 0.5);
+  font-family: "open sans"
+  }
 
 /* Slideshow container */
 .slideshow-container {
@@ -322,14 +330,7 @@ to {opacity: 1}
 
 
 
-.new-card-bottom-text {
-margin-top : 8em;
-height : 64px;
-padding : 0.6em;
-text-align : left;
-background-color: rgba(56, 56, 56, 0.5);
-font-family: "open sans"
-}
+
 
 
 .img9 {
