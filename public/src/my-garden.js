@@ -3,8 +3,7 @@ class MyGarden extends HTMLElement{
      super();
     }
     connectedCallback(){
-        this.innerHTML = 
-        `
+        this.innerHTML = `
         <ion-content padding>
         <ion-grid>
         <ion-row>
@@ -13,14 +12,12 @@ class MyGarden extends HTMLElement{
         </ion-row>
       </ion-grid>
 
-        <h2>
-        My garden  
-         <ion-icon name="list"> </ion-icon>
-    </h2>
-    <hr style="border: 1px solid;" />
-        
+        <h2> My garden</h2>
+
+    <hr style="border: 1px solid;"/>
+   
     <div class ="fixed">
-      <ion-button>Add a plant   </ion-button>
+      <ion-button>Add a plant </ion-button>  
     </div>
         
     <div class="new-card img8">            
