@@ -16,7 +16,7 @@ class PlantProfile extends HTMLElement{
       <hr style="border: 1px solid;"/>
  
      <div class ="fixed">
-      <ion-button>Add To My Garden  </ion-button>
+      <ion-button>Add To My Garden </ion-button>
      </div>
 
   
@@ -96,8 +96,6 @@ class PlantProfile extends HTMLElement{
 <span class="dot" onclick="currentSlide(2)"></span> 
 <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-
-
 
 
 </section>       

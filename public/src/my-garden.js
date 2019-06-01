@@ -29,7 +29,7 @@ class MyGarden extends HTMLElement{
     
          <ion-fab  class="reminder">
           <ion-fab-button>
-          <ion-icon name="calendar" size="small"></ion-icon>
+          <img src="/assets/CalendarWhite.svg">
           </ion-fab-button>
          </ion-fab>
         </div> 
@@ -54,7 +54,7 @@ class MyGarden extends HTMLElement{
              Create a reminder       
       <ion-fab  class="reminder">
       <ion-fab-button>
-        <ion-icon name="calendar" size="small"></ion-icon>
+      <img src="/assets/CalendarWhite.svg">
         </ion-fab-button>
         </ion-fab>       
         </div>    
@@ -69,7 +69,7 @@ class MyGarden extends HTMLElement{
              Create a reminder
       <ion-fab  class="reminder">
       <ion-fab-button>
-        <ion-icon name="calendar" size="small"></ion-icon>
+      <img src="/assets/CalendarWhite.svg">
         </ion-fab-button>
        </ion-fab>
         </div> 
