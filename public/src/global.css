@@ -430,5 +430,30 @@ padding: 16px;
     padding-top: 24px;
   }
   
+
+  
+  .readMore { 
+    height: 44px;
+    width: 44px;
+    right: 12em;
+    }
+  
+  .searchResultText{
+  margin-top : 8em;
+  height : 64px;
+  padding : 0.6em;
+  text-align : left;
+  background-color: #EAEAEA;
+  font-family: "open sans"
+  }
+  
+  .more{
+  height: 44px;
+  width: 44px;
+  }
+  
+  .dropdown-content{
+   padding-top: 24px;
+  }
   
   
