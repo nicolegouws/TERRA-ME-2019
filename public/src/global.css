@@ -435,13 +435,12 @@ padding: 16px;
   .readMore { 
     height: 44px;
     width: 44px;
-    right: 12em;
+    right: 18em;
     }
   
   .searchResultText{
-  margin-top : 8em;
   height : 64px;
-  padding : 0.6em;
+  padding : 24px;
   text-align : left;
   background-color: #EAEAEA;
   font-family: "open sans"
@@ -454,6 +453,11 @@ padding: 16px;
   
   .dropdown-content{
    padding-top: 24px;
+   height : 64px;
   }
   
-  
+  .rose{
+    width: 24px !important;
+    height: 24px !important;
+    color: black;
+  }

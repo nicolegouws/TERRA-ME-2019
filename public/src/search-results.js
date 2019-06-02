@@ -17,23 +17,66 @@ class SearchResults extends HTMLElement{
     <img id="searchResulImages" src="assets/agave.jpg">
     <div class="searchResultText">
         Agave
-        <ion-fab class="readMore">
-            <ion-fab-button>
+        <ion-fab class="readMore"></ion-fab>
                 <ion-icon name="more"></ion-icon>
             </ion-fab-button>
             <ion-fab-list side="top">
+            <span><ion-icon name="more"></ion-icon></span>
+                <div class="dropdown-content">
                 <div class="dropdown">
+                    <div class="centerlist">
+                     <div class="rose">
+                     <ul>
+                     <li> <ion-icon class="rose" name="rose"></ion-icon>Add to my garden</li>
+                     <li> <ion-icon class="rose" name="rose"></ion-icon>Add to my garden</ion-icon></li>
+                     </ul>
+                <div/>
+             </div>
+            </div>
+
+
+            <div>
+            <img id="searchResulImages" src="assets/Aloe1.jpg">
+            <div class="searchResultText">
+                Aloe
+                <ion-fab class="readMore"></ion-fab>
+                        <ion-icon name="more"></ion-icon>
+                    </ion-fab-button>
+                    <ion-fab-list side="top">
                     <span><ion-icon name="more"></ion-icon></span>
-                    <div class="dropdown-content">
-                        <p>
-                            <ion-icon name="rose"></ion-icon>Add to my garden</p>
-                        <p>
-                            <ion-icon name="book"></ion-icon>Read more</p>
-                    </div>
-                </div>
-        </ion-fab>
-    </div>
-</div>
+                        <div class="dropdown-content">
+                        <div class="dropdown">
+                            <div class="centerlist">
+                             <div class="rose">
+                             <ul>
+                             <li> <ion-icon class="rose" name="rose"></ion-icon>Add to my garden</li>
+                             <li> <ion-icon class="rose" name="rose"></ion-icon>Add to my garden</ion-icon></li>
+                             </ul>
+                        <div/>
+                     </div>
+                    </div> 
+
+                    <div>
+                    <img id="searchResulImages" src="assets/burrostailbasket-1200x1200.jpg">
+                    <div class="searchResultText">
+                        Burros Tail
+                        <ion-fab class="readMore"></ion-fab>
+                                <ion-icon name="more"></ion-icon>
+                            </ion-fab-button>
+                            <ion-fab-list side="top">
+                            <span><ion-icon name="more"></ion-icon></span>
+                                <div class="dropdown-content">
+                                <div class="dropdown">
+                                    <div class="centerlist">
+                                     <div class="rose">
+                                     <ul>
+                                     <li> <ion-icon class="rose" name="rose"></ion-icon>Add to my garden</li>
+                                     <li> <ion-icon class="rose" name="rose"></ion-icon>Add to my garden</ion-icon></li>
+                                     </ul>
+                                <div/>
+                             </div>
+                            </div> 
+
         </ion-content>
         <terra-footer></terra-footer>
                     `;   
