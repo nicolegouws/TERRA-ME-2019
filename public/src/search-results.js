@@ -16,7 +16,7 @@ class SearchResults extends HTMLElement{
             <ion-row align-items-start>
                 <ion-col>
                     <div>
-                        <img id="cactus" src="/Users/nicolegouws/TERRA-ME-2019/public/assets/Cactus_thumbnail.png">
+                        <img id="cactus" src="assets/Cactus_thumbnail.png">
                         <div class="searchResultText">
                             Cactus
                             <div/>
@@ -36,7 +36,7 @@ class SearchResults extends HTMLElement{
             <ion-row align-items-start>
                 <ion-col>
                     <div>
-                        <img id="Aloe" src="/Users/nicolegouws/TERRA-ME-2019/public/assets/Aloe_Thumbnail.png">
+                        <img id="Aloe" src="assets/Aloe_Thumbnail.png">
                         <div class="searchResultText">
                             Aloe
                             <div/>
