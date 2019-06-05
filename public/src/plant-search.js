@@ -10,13 +10,22 @@ class PlantSearch extends HTMLElement{
         </h2>
   
                   <hr style="border: 1px solid;" />
-                  <ion-searchbar></ion-searchbar>
-  
-                  <img id="placeholder" src="/Users/nicolegouws/TERRA-ME-2019/public/assets/PhotoUpload.png" />
+                  <h3 class="h3black">Search our library</h3>
+                  <div class="topnav">
+
+                  <input type="text" placeholder="Cactus">
+                  </div>
+                  <img id="placeholder" src="/assets/PhotoUpload.png" />
   
                   <div class="fixed">
                       <ion-button>Take a Picture</ion-button>
                   </div>
+
+                  
+   
+        
+            
+
         </ion-content>
         <terra-footer></terra-footer>
                   `;    
