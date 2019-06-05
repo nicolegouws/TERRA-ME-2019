@@ -2,14 +2,10 @@ class PlantProfile extends HTMLElement {
 	constructor() {
     super();  
     this.slideIndex = 1;
-  }
-  
-  plusSlides(n) {
-    this.showSlides((slideIndex += n));
-  }
-
-  currentSlide(n) {
-    this.showSlides((slideIndex = n));
+    window.plusSlides = this.plusSlides;
+    window.showSlides = this.showSlides;
+    window.currentSlide = this.currentSlide;
+    
   }
 
 	showSlides(n) {
@@ -30,7 +26,15 @@ class PlantProfile extends HTMLElement {
 		}
 		slides[	this.slideIndex - 1].style.display = 'block';
 		dots[	this.slideIndex - 1].className += ' active';
-	}
+  }
+    
+  plusSlides(n) {
+    this.showSlides((this.slideIndex += n));
+  }
+
+  currentSlide(n) {
+    this.showSlides((this.slideIndex = n));
+  }
 	connectedCallback() {
 		this.innerHTML = `
         <ion-content padding>
@@ -114,8 +118,8 @@ class PlantProfile extends HTMLElement {
 <div class="text">The pads of the nopal cactus are often eaten as a vegetable. They can be be cooked or eaten raw.</div>
 </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<a class="prev" onclick="window.plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="window.plusSlides(1)">&#10095;</a>
 
 </div>
 <br>
