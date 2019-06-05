@@ -4,88 +4,59 @@ class SearchResults extends HTMLElement{
     }
     connectedCallback(){
         this.innerHTML = `
-        <ion-content>
-        <h2>Search for a plant</h2>
-
-        <hr style="border: 1px solid;" />
-        <ion-searchbar></ion-searchbar>
-        <hr style="border: 1px solid;" />
-
-        <h3> Search for a plant </h3>
+        <ion-content padding>
         <ion-grid>
-            <ion-row>
-
+        <ion-row>
+           <ion-col size="12">
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+        <h2>
+    Confirm your plant
+  </h2>
+        <hr style="border: 1px solid;" />
+        <h3 style="text-align:left ; margin:24px; color:black">We think we found a match. Please select a plant to confirm or ask us to try again.</h3>
+        <hr style="border: 1px solid;" />
+        <ion-grid>
+            <ion-row align-items-start>
                 <ion-col>
-                    <ion-card>
-                        <img src="/assets/cactus-houseplant.jpg">
-
-                        <ion-card-header>
-                            <ion-card-title>Cactus</ion-card-title>
-                        </ion-card-header>
-
-                        <ion-fab vertical="center" horizontal="center" slot="fixed">
-                            <ion-fab-button>
-                                <ion-icon name="more"></ion-icon>
-                            </ion-fab-button>
-                            <ion-fab-list side="top">
-                                <div class="dropdown">
-                                    <span><ion-icon name="more"></ion-icon></span>
-                                    <div class="dropdown-content">
-                                        <p><ion-icon name="rose"></ion-icon>Add to my garden</p>
-                                        <p><ion-icon name="book"></ion-icon>Read more</p>
-                                    </div>
-                                </div>
-                        </ion-fab>
-
-                    </ion-card>
+                    <div>
+                        <img id="cactus" src="assets/Cactus_thumbnail.png">
+                        <div class="searchResultText">
+                            Cactus
+                            <div/>
+                        </div>
+                    </div>
                 </ion-col>
-
                 <ion-col>
-                    <ion-card>
-                        <img src="assets/burrostailbasket-1200x1200.jpg">
-                        <ion-card-header>
-                            <ion-card-title>Burros Tail
-                                <ion-icon name="more"></ion-icon>
-                            </ion-card-title>
-                        </ion-card-header>
-                    </ion-card>
+                    <div>
+                        <img id="agave" src="assets/Agave_thumbnail.png">
+                        <div class="searchResultText">
+                            Agave
+                            <div/>
+                        </div>
+                    </div>
                 </ion-col>
             </ion-row>
-        </ion-grid>
-
-        <ion-grid>
-            <ion-row>
-
+            <ion-row align-items-start>
                 <ion-col>
-                    <ion-card>
-                        <img src="/assets/Aloe1.jpg">
-                        <ion-card-header>
-                            <ion-card-title>Aloe
-                                <ion-icon name="more"></ion-icon>
-                            </ion-card-title>
-                        </ion-card-header>
-                    </ion-card>
+                    <div>
+                        <img id="Aloe" src="assets/Aloe_Thumbnail.png">
+                        <div class="searchResultText">
+                            Aloe
+                            <div/>
+                        </div>
+                    </div>
                 </ion-col>
-
                 <ion-col>
-                    <ion-card>
-                    </ion-card>
+                    <div class="fixed">
+                        <ion-button>Add a plant </ion-button>
+                    </div>
+
                 </ion-col>
             </ion-row>
+
         </ion-grid>
-
-        <ion-grid>
-            <ion-row>
-
-                <ion-col>
-                    <ion-card>
-                        <img src="assets/bi-color-hens-chicks_35643_zoom0.jpg">
-                        <ion-card-header>
-                            <ion-card-title>Color Hens Chicks
-                                <ion-icon name="more"></ion-icon>
-                            </ion-card-title>
-                        </ion-card-header>
-                    </ion-card>
         </ion-content>
         <terra-footer></terra-footer>
                     `;   
