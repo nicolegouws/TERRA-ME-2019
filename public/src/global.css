@@ -13,7 +13,10 @@ h2{
     font-weight: 600;
     margin-top: 16px;
     margin-left: 16px;
-    padding: .5em;
+    margin-right: 16px;
+    padding-right: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 hr {     
 background-color: #77ab49;
@@ -52,7 +55,9 @@ ion-button {
     font-size: 18px;
     display: block;
     margin-top: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+    margin-right: 8px;
+    margin-left: 8px;
 }
 
 .fixed {
@@ -439,13 +444,16 @@ padding: 16px;
     }
   
   .searchResultText{
-  height : 64px;
-  padding : 24px;
   text-align : left;
-  background-color: #EAEAEA;
-  font-family: "open sans"
+  font-family: "open sans";
+  margin-left: 8px;
   }
   
+  .bgcolor
+  {
+    background-color: #EAEAEA;
+  }
+
   .more{
   height: 44px;
   width: 44px;
@@ -460,4 +468,15 @@ padding: 16px;
     width: 24px !important;
     height: 24px !important;
     color: black;
+  }
+
+
+ 
+
+  btndivsearchresult
+  {
+    align-items: right;
+    margin:1em;
+    padding: 16px;
+    width : 300px;
   }
