@@ -4,8 +4,13 @@ class SearchResults extends HTMLElement{
     }
     connectedCallback(){
         this.innerHTML = `
-        <ion-content>
-        <ion-app>
+        <ion-content padding>
+        <ion-grid>
+        <ion-row>
+           <ion-col size="12">
+            </ion-col>
+        </ion-row>
+      </ion-grid>
         <h2>
     Confirm your plant
   </h2>
@@ -52,7 +57,6 @@ class SearchResults extends HTMLElement{
             </ion-row>
 
         </ion-grid>
-    </ion-app>
         </ion-content>
         <terra-footer></terra-footer>
                     `;   
