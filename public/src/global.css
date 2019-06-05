@@ -32,6 +32,15 @@ font-size: 24px;
 font-weight: bold;
 }
 
+.h3black
+{
+  text-align: center;
+  color: #000000;
+  font-family :"Open Sans";
+  font-size: 16px;
+  font-weight: bold;
+}
+
 p{
 font-family:"Open Sans";
 font-size: 16px;
@@ -447,11 +456,14 @@ padding: 16px;
   text-align : left;
   font-family: "open sans";
   margin-left: 8px;
+  padding-top:0.4em;
+  padding-bottom:0.4em;
   }
   
   .bgcolor
   {
     background-color: #EAEAEA;
+    width :80%;
   }
 
   .more{
@@ -476,7 +488,37 @@ padding: 16px;
   btndivsearchresult
   {
     align-items: right;
+    float : left;
     margin:1em;
     padding: 16px;
     width : 300px;
   }
+
+
+ ion-col
+ {
+  align-self: center
+ }
+
+ ion-row
+ {
+   margin: 0.5;
+ }
+
+ .topnav input[type=text] {
+  width : 80vw;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-left: 32px;
+  border: none;
+  font-size: 17px;
+ 
+
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 1px solid #b8a2a2;
+
+}
+
