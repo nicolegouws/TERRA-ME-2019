@@ -1,12 +1,25 @@
 class PlantProfile extends HTMLElement {
 	constructor() {
-    super();  
-    this.slideIndex = 1;
-    window.plusSlides = this.plusSlides;
-    window.showSlides = this.showSlides;
-    window.currentSlide = this.currentSlide;
-    
-  }
+		super();
+		this.slideIndex = 1;
+		this.plusSlides = this.plusSlides.bind(this);
+		this.showSlides = this.showSlides.bind(this);
+		this.currentSlide = this.currentSlide.bind(this);
+	}
+
+	connectedCallback() {
+		this.innerHTML = this.template;
+
+		const btnNext = document.querySelector('.next');
+		btnNext.addEventListener('click', this.plusSlides.bind(this));
+		const btnPrev = document.querySelector('.prev');
+		btnPrev.addEventListener('click', this.plusSlides.bind(this));
+		const btnDots = document.querySelectorAll('.dot');
+		Array.from(btnDots).forEach((element) => {
+			element.addEventListener('click', this.currentSlide.bind(this));
+		});
+		this.showSlides(this.slideIndex);
+	}
 
 	showSlides(n) {
 		var i;
@@ -16,77 +29,77 @@ class PlantProfile extends HTMLElement {
 			this.slideIndex = 1;
 		}
 		if (n < 1) {
-      this.slideIndex = slides.length;
+			this.slideIndex = slides.length;
 		}
 		for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none';
+			slides[i].style.display = 'none';
 		}
 		for (i = 0; i < dots.length; i++) {
 			dots[i].className = dots[i].className.replace(' active', '');
 		}
-		slides[	this.slideIndex - 1].style.display = 'block';
-		dots[	this.slideIndex - 1].className += ' active';
-  }
-    
-  plusSlides(n) {
-    this.showSlides((this.slideIndex += n));
-  }
+		slides[this.slideIndex - 1].style.display = 'block';
+		dots[this.slideIndex - 1].className += ' active';
+	}
 
-  currentSlide(n) {
-    this.showSlides((this.slideIndex = n));
-  }
-	connectedCallback() {
-		this.innerHTML = `
-        <ion-content padding>
-        
-        <ion-grid>
-        <ion-row>
-           <ion-col size="12">
-            </ion-col>
-        </ion-row>
-      </ion-grid> 
-      <h2>Plant profile </h2>
-      <hr style="border: 1px solid;"/>
- 
-     <div class ="fixed">
-      <ion-button>Add To My Garden </ion-button>
-     </div>
+	plusSlides(n) {
+		let modify = n.currentTarget.dataset.value;
+		this.showSlides((this.slideIndex += Number(modify)));
+	}
 
-  
+	currentSlide(n) {
+		let modify = n.currentTarget.dataset.value;
+		this.showSlides((this.slideIndex = Number(modify)));
+	}
+
+	get template() {
+		return `
+    <ion-content padding>
+    <ion-grid>
+    <ion-row>
+       <ion-col size="12">
+        </ion-col>
+    </ion-row>
+  </ion-grid> 
+  <h2>Plant profile </h2>
+  <hr style="border: 1px solid;"/>
+
+ <div class ="fixed">
+  <ion-button>Add To My Garden </ion-button>
+ </div>
 <div class="new-card img8">           
 <div class="new-card-top-text">
-     Cactus
-  </div>
-  <div class="new-card-bottom-text-profile">
-     A low maintenance plant that is ideal for busy people and indoor spaces
-  </div> 
+ Cactus
+</div>
+<div class="new-card-bottom-text-profile">
+ A low maintenance plant that is ideal for busy people and indoor spaces
+</div> 
 </div>      
 
 <ion-grid>
 <ion-row>
- <ion-col size="2"> <img src="/assets/FullSun.svg">
-  </ion-col>
+<ion-col size="2"> <img src="/assets/FullSun.svg">
+</ion-col>
 <ion-col size="9"><p>Full Sun </p>
-  </ion-col>
+</ion-col>
 </ion-row><hr style="border: 1px solid;" /> 
 </ion-grid>    
 
 
- <ion-grid>
+<ion-grid>
 <ion-row>
- <ion-col size="2"> <img src="/assets/Water.svg">
-  </ion-col>
+<ion-col size="2"> <img src="/assets/Water.svg">
+</ion-col>
 <ion-col size="9"><p> Water every 3 weeks when dormant, weekly when in bloom</p>
-  </ion-col>
+</ion-col>
 </ion-row><hr style="border: 1px solid;" /> 
 </ion-grid>       
-   
-   <ion-grid>
+
+<ion-grid>
 <ion-row>
- <ion-col size="2"> <img src="/assets/Grow Icon.svg">
-  </ion-col>
+<ion-col size="2"> <img src="/assets/Grow Icon.svg">
+</ion-col>
 <ion-col size="9"><p>Indoors in non-desert climates</p>
-  </ion-col>
+</ion-col>
 </ion-row><hr style="border: 1px solid;" /> 
 </ion-grid>      
 
@@ -118,16 +131,16 @@ class PlantProfile extends HTMLElement {
 <div class="text">The pads of the nopal cactus are often eaten as a vegetable. They can be be cooked or eaten raw.</div>
 </div>
 
-<a class="prev" onclick="window.plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="window.plusSlides(1)">&#10095;</a>
+<a class="prev btn-arrows" data-value="-1">&#10094;</a>
+<a class="next btn-arrows" data-value="1">&#10095;</a>
 
 </div>
 <br>
 
 <div style="text-align:center">
-<span class="dot" onclick="currentSlide(1)"></span> 
-<span class="dot" onclick="currentSlide(2)"></span> 
-<span class="dot" onclick="currentSlide(3)"></span> 
+<span class="dot" data-value="1"></span> 
+<span class="dot" data-value="2"></span> 
+<span class="dot" data-value="3"></span> 
 </div>
 
 
@@ -144,10 +157,7 @@ Make an appointment with our Plant Doctor to find out how to solve your problems
 
 </ion-content>  
 <terra-footer></terra-footer>
-`;
-
-// Start Slideshow
-this.showSlides(this.slideIndex);
+    `;
 	}
 }
 
