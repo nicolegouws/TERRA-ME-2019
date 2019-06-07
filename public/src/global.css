@@ -73,6 +73,7 @@ ion-button {
   position:sticky;
   top: 48px; 
   width: 100%;
+  z-index: 9999;
   }
 
 
@@ -422,16 +423,16 @@ padding: 16px;
     min-width: 400px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
-    z-index: 9999999999;
+
      display: block;
      padding: 12px 16px;
-    z-index: 9999999999;
+
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
      padding: 12px 16px;
-    z-index: 9999999999;
+
   }
   
   
