@@ -47,7 +47,7 @@ class SearchResults extends HTMLElement{
              </ion-grid>
 
                 <div class="fixed">
-                   <ion-button>Add a plant </ion-button>
+                   <ion-button href="/plant-search">Try Again</ion-button>
                 </div>
     
     </ion-content>
