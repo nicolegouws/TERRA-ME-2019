@@ -1,9 +1,33 @@
-class PlantSearch extends HTMLElement{
-    constructor(){
-     super();
-    }
-    connectedCallback(){
-        this.innerHTML = `       
+class PlantSearch extends HTMLElement {
+	constructor() {
+		super();
+	}
+	connectedCallback() {
+		this.innerHTML = this.template;
+		const camera = document.querySelector('blaze-camera');
+		camera.hidden = true;
+		camera.addEventListener('photo', async (e) => {
+			const blob = e.detail;
+			const dataUrl = await camera.toDataURL(blob);
+			document.querySelector('ion-router').push('/search-results');
+			console.log(dataUrl); // data:image/png;base64,iVBORw0KGg...
+		});
+
+		const cameraPlaceholder = document.querySelector('#placeholder');
+		cameraPlaceholder.addEventListener('click', async () => {
+			await camera.on();
+			document.querySelector('#placeholder').hidden = true;
+			document.querySelector('#camera-photo').hidden = false;
+		});
+
+		const button = document.querySelector('#take-picture');
+		button.addEventListener('click', async () => {
+			camera.takePhoto();
+		});
+	}
+
+	get template() {
+		return `
         <ion-content>
         <h2>
         Search for a plant 
@@ -15,21 +39,17 @@ class PlantSearch extends HTMLElement{
 
                   <input type="text" placeholder="Cactus">
                   </div>
+                  <blaze-camera id="camera-photo">
+                  </blaze-camera>
                   <img id="placeholder" src="/assets/PhotoUpload.png" />
   
                   <div class="fixed">
-                      <ion-button href="/search-results">Take a Picture</ion-button>
+                      <ion-button id="take-picture">Take a Picture</ion-button>
                   </div>
-
-                  
-   
-        
-            
-
         </ion-content>
         <terra-footer></terra-footer>
-                  `;    
-    }
-   }
-   
-   customElements.define('plant-search', PlantSearch);
+        `;
+	}
+}
+
+customElements.define('plant-search', PlantSearch);
