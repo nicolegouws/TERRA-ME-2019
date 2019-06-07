@@ -460,11 +460,7 @@ padding: 16px;
   padding-bottom:0.4em;
   }
   
-  .bgcolor
-  {
-    background-color: #EAEAEA;
-    width :80%;
-  }
+  
 
   .more{
   height: 44px;
@@ -521,4 +517,7 @@ border-radius: 10px 10px 10px 10px;
 border: 1px solid #b8a2a2;
 
 }
-
+.bgcolor{
+  width:80%;
+  color: black;
+}

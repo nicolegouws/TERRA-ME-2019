@@ -13,17 +13,21 @@ class PlantSearch extends HTMLElement {
 			console.log(dataUrl); // data:image/png;base64,iVBORw0KGg...
 		});
 
+
+		const button = document.querySelector('#take-picture');
+		button.hidden = true;
+		button.addEventListener('click', async () => {
+			camera.takePhoto();
+		});
+
 		const cameraPlaceholder = document.querySelector('#placeholder');
 		cameraPlaceholder.addEventListener('click', async () => {
 			await camera.on();
 			document.querySelector('#placeholder').hidden = true;
 			document.querySelector('#camera-photo').hidden = false;
+			button.hidden = false;
 		});
 
-		const button = document.querySelector('#take-picture');
-		button.addEventListener('click', async () => {
-			camera.takePhoto();
-		});
 	}
 
 	get template() {
@@ -34,14 +38,16 @@ class PlantSearch extends HTMLElement {
         </h2>
   
                   <hr style="border: 1px solid;" />
-                  <h3 class="h3black">Search our library</h3>
+                  <h3 class="h3black">Take a photo or search our library</h3>
                   <div class="topnav">
 
-                  <input type="text" placeholder="Cactus">
-                  </div>
+                  <input type="text" placeholder="| ">
+				  </div>
+				
                   <blaze-camera id="camera-photo">
                   </blaze-camera>
-                  <img id="placeholder" src="/assets/PhotoUpload.png" />
+				  <img id="placeholder" src="assets/Group.png" />
+				 
   
                   <div class="fixed">
                       <ion-button id="take-picture">Take a Picture</ion-button>
