@@ -5,18 +5,25 @@ class PlantSearch extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = this.template;
 		const camera = document.querySelector('blaze-camera');
-
+		camera.hidden = true;
 		camera.addEventListener('photo', async (e) => {
 			const blob = e.detail;
 			const dataUrl = await camera.toDataURL(blob);
+			document.querySelector('ion-router').push('/search-results');
 			console.log(dataUrl); // data:image/png;base64,iVBORw0KGg...
-        });
-        
-        const button = document.querySelector('#take-picture');
-        button.addEventListener('click' , async ()=>{
-            await camera.on();
-            camera.takePhoto();
-        })
+		});
+
+		const cameraPlaceholder = document.querySelector('#placeholder');
+		cameraPlaceholder.addEventListener('click', async () => {
+			await camera.on();
+			document.querySelector('#placeholder').hidden = true;
+			document.querySelector('#camera-photo').hidden = false;
+		});
+
+		const button = document.querySelector('#take-picture');
+		button.addEventListener('click', async () => {
+			camera.takePhoto();
+		});
 	}
 
 	get template() {
@@ -25,13 +32,20 @@ class PlantSearch extends HTMLElement {
         <h2>
         Search for a plant 
         </h2>
-        <hr style="border: 1px solid;" />
-        <ion-searchbar></ion-searchbar>
-        <blaze-camera id="camera-photo">
-        </blaze-camera>
-        <div class="fixed">
-            <ion-button id="take-picture">Take a Picture</ion-button>
-        </div>
+  
+                  <hr style="border: 1px solid;" />
+                  <h3 class="h3black">Search our library</h3>
+                  <div class="topnav">
+
+                  <input type="text" placeholder="Cactus">
+                  </div>
+                  <blaze-camera id="camera-photo">
+                  </blaze-camera>
+                  <img id="placeholder" src="/assets/PhotoUpload.png" />
+  
+                  <div class="fixed">
+                      <ion-button id="take-picture">Take a Picture</ion-button>
+                  </div>
         </ion-content>
         <terra-footer></terra-footer>
         `;

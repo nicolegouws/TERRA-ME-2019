@@ -64,7 +64,7 @@ class PlantProfile extends HTMLElement {
   <hr style="border: 1px solid;"/>
 
  <div class ="fixed">
-  <ion-button>Add To My Garden </ion-button>
+ <ion-button href="/my-garden/daisy">Add To My Garden </ion-button>
  </div>
 <div class="new-card img8">           
 <div class="new-card-top-text">
