@@ -67,14 +67,15 @@ class nSearchResults extends HTMLElement{
         <ion-grid>
                 <ion-row>
                     <ion-col size="6"> 
-                         <div class="bgcolor">  
+                         <div class="bgcolor">
+                         <a href= "/plant-profile/:id">  
                         <img src="assets/Cactus_thumbnail.png" alt="Cactus">
                         <ion-text class="searchResultText">Cactus</ion-text>
                         </div>
                     </ion-col>
                     <ion-col size="6"> 
                            <div class="bgcolor">
-                            <img src="assets/Agave_thumbnail.png" alt="Cactus">
+                            <img src="assets/Agave_thumbnail.png" alt="Agave">
                             <ion-text class="searchResultText">Agave</ion-text>
                             </div>
                     </ion-col>
@@ -84,7 +85,7 @@ class nSearchResults extends HTMLElement{
                 <ion-row>
                         <ion-col size="6"> 
                                 <div class="bgcolor">
-                            <img src="assets/Aloe_Thumbnail.png" alt="Cactus">
+                            <img src="assets/Aloe_Thumbnail.png" alt="Aloe">
                            
                             <ion-text class="searchResultText">Aloe</ion-text>
                             </div>
@@ -94,7 +95,7 @@ class nSearchResults extends HTMLElement{
             </ion-grid>
          
             <div class="btndivsearchresult">
-                    <ion-button >Try again</ion-button>   
+                    <ion-button href="/plant-search">Try again</ion-button>   
                 </div>
 
     </ion-content>  

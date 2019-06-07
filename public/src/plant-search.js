@@ -18,7 +18,7 @@ class PlantSearch extends HTMLElement{
                   <img id="placeholder" src="/assets/PhotoUpload.png" />
   
                   <div class="fixed">
-                      <ion-button>Take a Picture</ion-button>
+                      <ion-button href="/search-results">Take a Picture</ion-button>
                   </div>
 
                   

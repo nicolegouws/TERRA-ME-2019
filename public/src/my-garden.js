@@ -17,7 +17,7 @@ class MyGarden extends HTMLElement{
     <hr style="border: 1px solid;"/>
    
     <div class ="fixed">
-      <ion-button>Add a plant </ion-button>  
+      <ion-button href="/plant-search">Add a plant </ion-button>  
     </div>
         
     <div class="new-card img8">            
