@@ -7,10 +7,33 @@ class PlantSearch extends HTMLElement {
 		const camera = document.querySelector('blaze-camera');
 		camera.hidden = true;
 		camera.addEventListener('photo', async (e) => {
+			const urlKey = 'https://vision.googleapis.com/v1/images:annotate?key=MY_KEY';
 			const blob = e.detail;
 			const dataUrl = await camera.toDataURL(blob);
-			document.querySelector('ion-router').push('/search-results');
-			console.log(dataUrl); // data:image/png;base64,iVBORw0KGg...
+			
+			const visionAPI = fetch(urlKey, {
+				method: "POST",
+				body: JSON.stringify({
+					"requests":[
+					  {
+						"image":{
+						  "content": dataUrl.replace(/^data:image\/[a-z]+;base64,/, "")
+						},
+						"features":[
+						  {
+							"type":"LABEL_DETECTION",
+							"maxResults":1
+						  }
+						]
+					  }
+					]
+				  })
+			});
+
+			if(await visionAPI){
+				a.responses[0].labelAnnotations[0].description
+				document.querySelector('ion-router').push('/search-results');
+			}
 		});
 
 
